@@ -1,0 +1,276 @@
+/* General Styling */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Chuyển thành 1 cột */
+    }
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: #f4f4f4;
+    margin-top: 70px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* CSS cho Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cột */
+    gap: 20px; /* Khoảng cách giữa các khối */
+    margin-top: 20px;
+}
+
+.grid-item {
+    background-color: #f9f9f9; /* Màu nền nhạt */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+    text-align: center;
+}
+
+.grid-item h3 {
+    color: #2c3e50; /* Màu tiêu đề */
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.grid-item p {
+    color: #7f8c8d; /* Màu chữ phần mô tả */
+    font-size: 1em;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.navbar-nav .btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .btn:hover {
+    background-color: #49b1fe;
+    transform: translateY(-3px);
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: linear-gradient(to right, #60c2fe, #30a9fd);
+    padding: 80px 0;
+    color: white;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.hero-section p {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.hero-section .btn {
+    background-color: #fff;
+    color: #60c2fe;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hero-section .btn:hover {
+    background-color: #e9ecef;
+    color: #30a9fd;
+}
+
+/* Hiệu ứng di chuyển logo từ trái qua phải */
+.animated-logo {
+    animation: moveRight 2s ease-in-out;
+}
+
+/* Tạo keyframe di chuyển logo */
+@keyframes moveRight {
+    0% {
+        transform: translateX(-100%); /* Bắt đầu từ bên trái */
+    }
+    50% {
+        transform: translateX(0); /* Vị trí giữa */
+    }
+    30% {
+        transform: translateX(30%); /* Kết thúc tại bên phải */
+    }
+}
+
+/* About Us Section */
+.about-us-section {
+    padding: 80px 20px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-section h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.about-us-section p {
+    font-size: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.about-us-section p::first-letter {
+    font-size: 28px;
+    color: #60c2fe;
+}
+
+/* Features Section */
+.features-section {
+    padding: 80px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.features-section p {
+    font-size: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.features-section .quote {
+    font-size: 24px;
+    font-style: italic;
+    color: #60c2fe;
+    margin-top: 40px;
+}
+
+/* Benefits Section */
+.benefits-section {
+    padding: 80px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.benefits-section h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.benefits-section p {
+    font-size: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.benefits-section .quote {
+    font-size: 24px;
+    font-style: italic;
+    color: #60c2fe;
+    margin-top: 40px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.contact-section p {
+    font-size: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.contact-section .quote {
+    font-size: 24px;
+    font-style: italic;
+    color: #60c2fe;
+    margin-top: 40px;
+}
+
+/* Footer */
+.footer {
+    background-color: #49b1fe;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #60c2fe;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Transition Effects */
+section, nav {
+    transition: all 0.3s ease;
+}
+
+h2, p, .btn {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h2:hover, p:hover, .btn:hover {
+    transform: scale(1.03);
+}
+

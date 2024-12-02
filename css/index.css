@@ -1,0 +1,202 @@
+.nav-item .btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.nav-item .btn:hover {
+    transform: translateY(-3px);
+}
+
+h5 {
+    margin-bottom: 0px !important;
+}
+/* body {
+    background-color: #91d9ff;
+} */
+
+.login{
+    margin-top: 6%;
+}
+.login-left{
+    text-align: center;
+    color: #fff;
+    margin-top: 4%;
+}
+.login-right{
+    background: #f8f9fa;
+    border-radius: 5%;
+}
+.login-left input{
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    width: 60%;
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #383d41;
+    margin-top: 30%;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+.login-left img{
+    margin-top: 15%;
+    margin-bottom: 5%;
+    width: 25%;
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+.login-left p{
+    font-weight: lighter;
+    padding: 12%;
+    margin-top: -9%;
+}
+.login .login-form{
+    padding: 10%;
+    margin-top: 10%;
+}
+.btnlogin{
+    float: center;
+    margin-top: 3%;
+    border: none;
+    border-radius: 40px;
+    border: 1px solid #0062cc;
+    padding: 2%;
+    background: #60c2fe;
+    color: #000;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+}
+.login .nav-tabs{
+    margin-top: 10%;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    background: #60c2fe;
+    border-radius: 40px;
+    border:1px solid #0062cc;
+}
+.login .nav-tabs .nav-link{
+    float: center;
+    margin: 2%;
+    height: 50px;
+    width: 100%;
+    color: #000;
+    border-radius: 1.5rem;
+}
+.login .nav-tabs .nav-link:hover{
+    border: none;
+}
+.login .nav-tabs .nav-link.active{
+    float: center;
+    width: 95%;
+    margin: 2%;
+    text-align: center;
+    color: #0062cc;
+    border: none;
+    border-radius: 1.5rem;
+}
+.login-heading{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: -15%;
+    color: #0062cc;
+    font-size: 30px;
+}
+.form-group .form-control{
+    height: 50px;
+    margin-top: 15px;
+    border: 1px solid #0062cc;
+    border-radius: 15rem;
+}
+.register {
+    margin-top: 6%;
+}
+.register-right{
+    background: #f8f9fa;
+    border-radius: 5%;
+}
+.register .register-form{
+    padding: 10%;
+    margin-top: 10%;
+}
+.register-heading{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: -15%;
+    color: #0062cc;
+    font-size: 30px;
+}
+.btnRegister{
+    float: center;
+    margin-top: 3%;
+    border: none;
+    border-radius: 40px;
+    border: 1px solid #0062cc;
+    padding: 2%;
+    background: #60c2fe;
+    color: #000;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Hiệu ứng di chuyển cho hình ảnh */
+#roleImage {
+    transition: transform 0.5s ease-in-out;
+}
+
+.move-left {
+    transform: translateX(-200%);
+}
+
+.move-right {
+    transform: translateX(50%);
+}
+
+.register-left img {
+    width: 200px;
+    height: auto;
+    animation: bounce 2s infinite; /* Thêm hiệu ứng bounce */
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px); /* Di chuyển lên */
+    }
+    50% {
+        transform: translateY(0); /* Quay về vị trí ban đầu */
+    }
+    75% {
+        transform: translateY(10px); /* Di chuyển xuống */
+    }
+    100% {
+        transform: translateY(0); /* Quay về vị trí ban đầu */
+    }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .login {
+        margin-top: 0; /* Bỏ margin top cho điện thoại */
+    }
+    .login-left,
+    .login-right {
+        margin: 0; /* Bỏ margin cho cả hai phần */
+        width: 100%; /* Chiếm 100% chiều rộng */
+    }
+    .login-left img {
+        width: 50%; /* Tăng kích thước hình ảnh cho thiết bị nhỏ */
+    }
+    .btnlogin, .btnRegister {
+        width: 90%; /* Giảm chiều rộng cho nút */
+    }
+    .login-heading {
+        font-size: 24px; /* Giảm kích thước tiêu đề trên thiết bị nhỏ */
+    }
+    .login .nav-tabs {
+        font-size: 16px; /* Giảm kích thước font cho các tab */
+    }
+}

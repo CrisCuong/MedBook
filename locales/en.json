@@ -1,0 +1,20 @@
+{
+    "tr_home": "Home",
+    "tr_about_us": "About Us",
+    "tr_patient-tab": "Patient",
+    "tr_doctor-tab": "Doctor",
+    "tr_admin-tab": "Admin",
+    "welcome": "Welcome",
+    "patient": "Patient",
+    "doctor": "Doctor",
+    "admin": "Admin",
+    "login_as_patient": "Login as Patient",
+    "login_as_doctor": "Login as Doctor",
+    "login_as_admin": "Login as Admin",
+    "phone_number": "Phone number",
+    "password": "Password",
+    "login": "Login",
+    "create_new_account": "Create a new account",
+    "forgot_password": "Forgot password",
+    "username": "Username"
+}

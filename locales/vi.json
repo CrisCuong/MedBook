@@ -1,0 +1,20 @@
+{
+    "tr_home": "Trang chủ",
+    "tr_about_us": "Về chúng tôi",
+    "tr_patient-tab": "Bệnh nhân",
+    "tr_doctor-tab": "Bác sĩ",
+    "tr_admin-tab": "Quản trị viên",
+    "welcome": "Chào mừng",
+    "patient": "Bệnh nhân",
+    "doctor": "Bác sĩ",
+    "admin": "Quản trị viên",
+    "login_as_patient": "Đăng nhập với tư cách Bệnh nhân",
+    "login_as_doctor": "Đăng nhập với tư cách Bác sĩ",
+    "login_as_admin": "Đăng nhập với tư cách Quản trị viên",
+    "phone_number": "Số điện thoại",
+    "password": "Mật khẩu",
+    "login": "Đăng nhập",
+    "create_new_account": "Tạo tài khoản mới",
+    "forgot_password": "Quên mật khẩu",
+    "username": "Tên đăng nhập"
+}

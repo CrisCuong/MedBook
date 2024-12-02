@@ -1,0 +1,360 @@
+/* Format doctor panel */
+
+.container-fluid{
+    margin-top: 5%;
+}
+.list-group .list-group-item{
+    border-color: #000;
+    padding: 20px;
+}
+.list-group .list-group-item.active{
+    background-color: #fefe9c;
+    color: #000;
+    border-color: #000;
+}
+.tab-pane {
+    display: none; /* Hide inactive tabs completely */
+}
+.tab-pane.active {
+    display: block; /* Only show the active tab */
+}
+
+/* Tab dashboard */
+.container-content {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 950px;
+    height: max-content;
+    text-align: center;
+}
+
+
+
+/* ------------------------------------------------------------------------------- */
+/* Notification */
+#doctorNotificationCount {
+    display: none;
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 10px;
+}
+.notification-list {
+    position: absolute;
+    left: -200px !important;
+    margin-top: 20px !important; 
+    right: 0; /* Align the dropdown to the left of the icon */
+    transform: none; /* Remove centering transform */
+    width: 350px; /* Set a fixed width for the dropdown */
+    padding: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+
+.notification-list .dropdown-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    padding: 10px;
+    border-bottom: 1px solid #e9ecef; /* Divider between notifications */
+}
+.notification-list .dropdown-item:last-child {
+    border-bottom: none; /* No border for the last item */
+}
+
+.notification-list .dropdown-item.unread {
+    font-weight: bold; /* Bold text for unread notifications */
+    background-color: #f8f9fa; /* Subtle background for unread */
+}
+.notification-list .dropdown-item.unread:hover {
+    background-color: #f0f0f0;
+}
+.notification-list .dropdown-item.read {
+    font-weight: normal;
+    background-color: #ffffff;
+}
+.notification-list .dropdown-item.read:hover {
+    background-color: #f0f0f0;
+}
+/* Notification content and timestamp alignment */
+.notification-content {
+    display: block; /* Stack message and time vertically */
+}
+
+.notification-message {
+    flex-grow: 1; /* The message takes up the remaining space */
+    margin-bottom: 5px;
+}
+
+.notification-time {
+    font-size: 0.7rem;
+    color: #6c757d; /* Muted text color for the time */
+    white-space: nowrap; /* Prevent wrapping */
+    text-align: right;
+}
+
+.notification-icon {
+    margin-right: 10px;
+    font-size: 1.2rem; /* Size of icon */
+    color: #007bff; /* Example icon color */
+}
+#markAllAsReadBtn:hover {
+    background-color: #f0f0f0;
+}
+
+/* ------------------------------------------------ */
+/* change password*/
+.change-password {
+    background-color: #fff;
+    width: 40%;
+    margin-top: 50px !important;
+    margin: 0 auto; /* căn giữa */
+    padding: 20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    height: 90%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cell-body {
+    margin-top: 50px;
+}
+.change-password .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.change-password .form-group label {
+    flex: 1;
+    text-align: left;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.change-password .form-group input {
+    flex: 2;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: solid 1px #0062cc;
+}
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px; /* Khoảng cách giữa các nút */
+    margin-top: 20px;
+}
+/* Định dạng chung cho cả hai nút */
+.button-group .btn {
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    min-width: 120px;
+}
+
+.button-group .btn-primary {
+    background-color: #4db5ff;
+    color: #fff;
+    border: none;
+}
+
+/* Thêm hiệu ứng hover để tạo cảm giác nhất quán */
+.button-group .btn:hover {
+    opacity: 0.9;
+}
+
+/* ------------------------------------------------ */
+/* dashboard*/
+
+
+.dash-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .dash-section {
+    padding: 20px;
+  }
+  
+.statistic-container {
+    display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử */
+    justify-content: space-between; /* Căn chỉnh các phần tử ở hai bên */
+    align-items: center; /* Căn chỉnh phần tử theo chiều dọc */
+}
+  
+.statistic-cards {
+    display: flex; /* Sử dụng Flexbox cho các thẻ thống kê */
+    flex-direction: column; /* Xếp chồng các thẻ theo chiều dọc */
+    width: 40%; /* Chiếm 50% chiều rộng của phần chứa */
+}
+
+#monthlyAppointmentsChart {
+    width: 500px !important;
+    height: 250px !important;
+}
+  
+.stat-card {
+    background-color: #f1f1f1; /* Màu nền cho thẻ */
+    border: 1px solid #ddd; /* Đường viền */
+    padding: 15px; /* Padding bên trong */
+    margin-bottom: 10px; /* Khoảng cách giữa các thẻ */
+    border-radius: 5px; /* Bo góc */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+.patient-statistic-cards {
+    display: flex;
+    gap: 20px; /* Khoảng cách giữa các ô */
+    margin-top: 10px; /* Khoảng cách phía trên */
+}
+.patient-statistic-cards .stat-card {
+    flex: 1;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* ------------------------------------------------ */
+/* appointment list*/
+#appoListContainer {
+    height: 400px; /* Adjust the height as needed */
+    overflow-y: auto;
+    border: 1px solid #ddd; /* Optional: Adds a border for better visibility */
+    position: relative;
+    margin-top: 20px;
+}
+#appoListTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0px;
+}
+#appoListTable thead {
+    position: sticky;
+    top: 0;
+    z-index: 1; /* Ensure the header stays above the content */
+    background-color: #f8f8f8;
+    /* border-bottom: 2px solid #ddd; */
+}
+#appoListTable th,
+#appoListTable td {
+    padding: 10px;
+    z-index: 2;
+    border-bottom: 1px solid #ddd;
+}
+#appoListTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.cancel-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 5px;
+} 
+.cancel-btn {
+    background-color: #d9534f;
+    color: #fff;
+}  
+.cancel-btn:hover {
+    background-color: #c9302c;
+}
+.status-active{
+    color: #0eb50e;
+}
+.status-canceled{
+    color: red;
+}
+
+
+/* ------------------------------------------------ */
+/* patient profile*/
+.input-group>.form-control:not(:last-child) {
+    border: solid 1px #4db5ff !important;
+}
+.btn-outline-secondary {
+    color: #000 !important; 
+    border-color: #4db5ff !important;
+}
+.btn-outline-secondary:hover {
+    color: #fff !important;
+    background-color: #4db5ff !important; 
+    border-color: #4db5ff !important;
+}
+
+
+/* ------------------------------------------------ */
+/* schedule*/
+#schedule-body td{
+    padding: 10px 20px 5px 20px !important;
+}
+.form-control:disabled, .form-control[readonly] {
+    background-color: white !important;
+    border: 0 !important;
+    padding: 6px !important;
+}
+.custom-control-input:checked ~ .custom-control-label::before {
+    color: #fff !important;
+    border-color: #4db5ff !important;
+    background-color: #4db5ff !important;
+}
+#update-button {
+    background-color: #4db5ff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------ */
+/* introduction*/
+.title-dash {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.content-dash {
+    border: 2px solid #9ec1e2;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: left;
+    font-size: 16px;
+}
+.content-dash ul {
+    list-style: none;
+    padding: 0;
+}
+.content-dash ul li {
+    margin-bottom: 10px;
+}
+.col-md-4 p {
+    color: #2d82d3;
+    margin: 0; /* Xóa khoảng cách mặc định */
+}
+#save-btn {
+    background-color: #4db5ff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
