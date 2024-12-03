@@ -1,10 +1,8 @@
-FROM php:8.1-apache
+# Sử dụng PHP với Apache
+FROM php:8.2-apache
 
-# Sao chép mã nguồn vào thư mục /var/www/html
-COPY . /var/www/html
+# Sao chép toàn bộ mã nguồn của ứng dụng vào container
+COPY . /var/www/html/
 
-# Đặt quyền cho thư mục
-RUN chown -R www-data:www-data /var/www/html
-
-# Mở cổng 80
+# Mở cổng 80 để cho phép truy cập vào ứng dụng
 EXPOSE 80
